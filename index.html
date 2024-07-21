@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="yafafalodge">
+    <title>Yafafa Hotel</title>
+    <link rel="stylesheet" href="hotel.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v3.5.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.5.1/mapbox-gl.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </head>
+  <body>
+    <!--header section start-->
+    <header>
+      <nav class="navbar">
+        <h2 class="logo">
+          <a href="#" class="header-link"><span>YA</span>FAFA</a>
+        </h2>
+        <input type="checkbox" id="menu-toggler" />
+        <label for="menu-toggler" id="hamburger-btn">
+          <i class="fa fa-bars"></i>
+        </label>
+
+        <ul class="all-link">
+          <li><a href="#home" class="header-link">Home</a></li>
+          <li><a href="#services" class="header-link">Services</a></li>
+          <li><a href="#rooms" class="header-link">Rooms</a></li>
+          <li><a href="#about-us" class="header-link">About Us</a></li>
+          <li>
+            <a href="#contact-fearnot" class="header-link">Contact FEARNOT</a>
+          </li>
+          <label for="menu-toggler" id="hamburger-btn" class="close">
+            <i class="fa fa-close"></i>
+          </label>
+        </ul>
+
+        <div class="nav-btns">
+          <a href="#special-offers">Special Offers</a>
+        </div>
+      </nav>
+    </header>
+    <div class="bg"></div>
+    <!--header section end-->
+
+    <!--home section start-->
+    <section class="homepage" id="home">
+      <div class="content">
+        <div class="text">
+          <h2>YAFAFA LODGE</h2>
+          <p><i>WELCOME TO FEARNOT'S LODGE</i></p>
+        </div>
+      </div>
+      <a href="#services">Service</a>
+    </section>
+    <div class="logo">My logo</div>
+    
+    <!--home section end-->
+
+    <!--services sections start-->
+    <section class="services" id="services">
+      <h2>What We Offer</h2>
+      <p>Foods, drinks, perfect resting rooms, and many more</p>
+      <ul class="cards">
+        <li class="card">
+          <img src="./images/dri1.jpeg" alt="Soft Drink" />
+          <h3>Soft Drink</h3>
+          <p>Drink in cup</p>
+        </li>
+        <li class="card">
+          <img src="./images/shower1.jpeg" alt="Shower" />
+          <h3>Shower</h3>
+          <p>Shower flowing</p>
+        </li>
+        <li class="card">
+          <img src="./images/bed1.jpeg" alt="Bed" />
+          <h3>Bed</h3>
+          <p>Mattress with pillow</p>
+        </li>
+        <li class="card">
+          <img src="./images/gh1.jpeg" alt="Food" />
+          <h3>Food</h3>
+          <p>Waakye Foods</p>
+        </li>
+        <li class="card">
+          <img src="./images/ac1.jpeg" alt="Air conditioner" />
+          <h3>Air Conditioner</h3>
+          <p>White air conditioner</p>
+        </li>
+
+        <li class="card">
+          <img src="./images/azam4.jpeg" alt="" />
+          <h3>Spot bar</h3>
+          <p>Drinking spot</p>
+        </li>
+      </ul>
+    </section>
+    <!--services sections end-->
+
+    <!--rooms start-->
+    <section class="rooms" id="rooms">
+      <h2>Rooms</h2>
+      <p>We offer a wide range of rooms that are also affordable</p>
+      <div class="cards" id="cards"></div>
+    </section>
+    <!--rooms end-->
+
+    <!--about-us start-->
+    <section class="about-us" id="about-us">
+      <div class="con">
+        <img src="./images/ac1.jpeg" alt="Hotel Image" />
+        <div class="detail">
+          <h2>About Us</h2>
+          <p>
+            Yafafa Hotel is a well known hotel in Suhum-Kofigya. Yafafa lodge
+            hotel is managed by FEARNOT, a very cool boy with a cat attitude. All
+            the rooms are affordable to rent.
+          </p>
+          <p>
+            Also this hotel is popularly known by in Suhum-Kofigya 
+            Yafafa lodge is well and a safe place to  stay.
+          </p>
+          <p>
+            <i>Suhum-Kofigya is also a popular  place or a well-known place in Suhum.
+              MAY WE SAY THAT IT IS THE BEST PLACE TO STAY AND REST.
+            </i>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--about-us end-->
+
+    <!--contact start-->
+    <section class="contact" id="contact-fearnot">
+      <h2>Contact FEARNOT</h2>
+      <div class="con">
+        <div class="contact-details">
+          <div class="detail">
+            <h2>Office Info</h2>
+            <p>
+              For more information or to make a reservation, please contact us
+              at:
+            </p>
+            <!-- <a href="tel:+233599752548">
+                    <i class="fa fa-phone"></i>+233 59 975 2548
+                  </a> -->
+
+            <h4><i class="fa fa-phone"></i> +233 59 975 2548</h4>
+            <h4><i class="fa fa-envelope"></i> yourmail@gmail.cpm</h4>
+            <h4><i class="fa fa-plus"></i> 16 Suhum , Kofigya, Ghana</h4>
+          </div>
+          <div class="opening-hours">
+            <h2>Opening Hours</h2>
+            <p>Monday - Sunday _______________ All Day</p>
+          </div>
+        </div>
+
+        <form method="post" class="get-in-touch" onsubmit="sendEmail(event)">
+          <h2>Get In Touch</h2>
+          <div class="input">
+            <i class="fa fa-user"></i>
+            <input name="name" type="text" placeholder="Name" required />
+          </div>
+
+          <div class="input">
+            <i class="fa fa-envelope"></i>
+            <input
+              name="email"
+              type="email"
+              placeholder="Email Address"
+              required
+            />
+          </div>
+
+          <div class="input">
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Message"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div id="map"></div>
+    </section>
+    <!--contact end-->
+
+    <!--footer start-->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Yafafa Hotel</h3>
+          <p>Your perfect escape awaits at Yafafa Hotel.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#rooms">Rooms</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#contact-fearnot">Contact FEARNOT</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>Email: info@yafafahotel.com</p>
+          <p>Phone: +233 59 975 2548</p>
+        </div>
+        <div class="footer-section">
+          <h3>Book Now</h3>
+          <form action="#" method="post">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required />
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required />
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required />
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required />
+
+            <button type="submit">Book Now</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Yafafa Hotel. All rights reserved.</p>
+      </div>
+    </footer>
+    <!--footer end-->
+
+    <!-- BOOKING POP UP -->
+    <div class="booking-page disabled" id="booking-page">
+      <!-- <i class="fa fa-close close"></i> -->
+      <h1>Book Now</h1>
+
+      <div class="contents">
+        <div class="dots">
+          <div class="dot active-dot"></div>
+          --
+          <div class="dot"></div>
+          --
+          <div class="dot"></div>
+        </div>
+        <!-- Page 1 -->
+        <div class="page page1" id="page1">
+          <h3 class="page-title">Room Details</h3>
+          <div class="container">
+            <img src="./images/room2.jpeg" alt="room" />
+            <div class="deatail">
+              <p id="p1_status">Avaliable</p>
+              <h4 id="p1_name">Name</h4>
+              <p id="p1_description"></p>
+              <h5>Room Features</h5>
+              <ul id="p1_roomFeatures"></ul>
+              <h4>Price for a night : $<span class="p1_price"></span></h4>
+              <h4>Price for a Day : $<span class="p1_price"></span></h4>
+              <div class="flex-grow"></div>
+              <div class="btns">
+                <button class="close-btn" id="p1_backBtn">Cancle</button>
+                <button id="p1_nextBtn">Continue</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Page 2 -->
+        <div class="page page2 disabled" id="page2">
+          <h3 class="page-title">Your Cantact Info</h3>
+          <div class="form">
+            <div class="input-group">
+              <i class="fa fa-user"></i>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Your Name"
+              />
+            </div>
+            <div class="input-group">
+              <i class="fa fa-envelope"></i>
+              <input type="email" name="email" id="email" placeholder="Email" />
+            </div>
+
+            <div class="input-group">
+              <i class="fa fa-phone"></i>
+              <input
+                type="tel"
+                name="phoneNumber"
+                id="phoneNumber"
+                placeholder="Phone Number"
+              />
+            </div>
+
+            <div class="input-group-g">
+              <select id="stayingOp" name="stayingOp" required>
+                <optgroup>
+                  <option class="inactive" value="" selected disabled>
+                    Staying Period
+                  </option>
+                  <option value="A Night">A Night</option>
+                  <option value="A day">A Day</option>
+                  <option value="Two Days">Two Days</option>
+                  <option value="Not Sure">Not Sure</option>
+                </optgroup>
+              </select>
+            </div>
+
+            <div class="input-group-g">
+              <label for="p_method" id="p_method">Payment Method</label>
+              <ul>
+                <li>
+                  <input type="radio" name="p_method" value="momo" /> Momo
+                </li>
+                <li>
+                  <input type="radio" name="p_method" value="face to face" />
+                  Face to Face
+                </li>
+                <li>
+                  <input type="radio" name="p_method" value="visa card" />
+                  Visa/Master Card
+                </li>
+              </ul>
+            </div>
+
+            <div class="btns">
+              <button class="close-btn" id="p2_backBtn">Back</button>
+              <button id="p2_nextBtn">Continue</button>
+            </div>
+          </div>
+        </div>
+        <!-- Page 3 -->
+
+        <div class="page page3 disabled" id="page3">
+          <h3 class="page-title">Verify</h3>
+          <div class="page3-container">
+            <div class="room-info">
+              <img src="./images/room2.jpeg" alt="room" />
+              <div class="deatail">
+                <h4 id="p3_name">Name</h4>
+                <p id="p3_status"></p>
+                <h5>Room Features</h5>
+                <ul id="p3_roomFeatures"></ul>
+              </div>
+              <h4>Price for a night : $<span class="p3_price"></span></h4>
+              <h4>Total Price : $<span class="p3_price"></span></h4>
+            </div>
+            <div class="person-info">
+              <div class="info">
+                <div class="name">
+                  <h3>Your Name</h3>
+                  <p id="p3_p_name"></p>
+                </div>
+                <div class="email">
+                  <h3>Email</h3>
+                  <p id="p3_p_email"></p>
+                </div>
+                <div class="number">
+                  <h3>Phone Number</h3>
+                  <p id="p3_p_phoneNumber"></p>
+                </div>
+                <div class="stayingOption">
+                  <h3>Staying Period</h3>
+                  <p id="p3_p_stayingOp"></p>
+                </div>
+                <div class="PaymentMethod">
+                  <h3>Payment Method</h3>
+                  <p id="p3_p_method"></p>
+                </div>
+              </div>
+
+              <div class="btns">
+                <button class="close-btn" id="p3_backBtn">Back</button>
+                <button id="p3_nextBtn">Continue</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <script src="./hotel.js"></script>
+  </body>
+</html>
