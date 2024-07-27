@@ -532,7 +532,7 @@ section {
 }
 
 .services .cards .card:hover {
-  transition: 0.3s;
+  transition: 0.5s;
   width: 260px;
   height: 330px;
 }
