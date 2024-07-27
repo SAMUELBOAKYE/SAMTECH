@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="yafafalodge">
+   
     <title>Yafafa Hotel</title>
     <link rel="stylesheet" href="hotel.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -395,5 +396,41 @@
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
     <script src="./hotel.js"></script>
+
+      <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+(function(){
+            emailjs.init("YOUR_USER_ID"); // Replace "YOUR_USER_ID" with your actual EmailJS user ID
+        })();
+    </script>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea><br><br>
+        
+        <button type="submit">Send</button>
+    </form>
+
+    <script type="text/javascript">
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+                .then(function() {
+                    alert('Message sent successfully!');
+                }, function(error) {
+                    console.log('Failed to send message:', error);
+                });
+        });
+    </script>
+      
   </body>
 </html>
