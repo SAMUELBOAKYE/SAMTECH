@@ -24,7 +24,7 @@ const dummyRoomData = [
       "Digital TV with limited Stations",
     ],
     pricePerNight: 20.0,
-    pricePerDay: 120.0,
+    pricePerDay: 10.0,
     roomStatus: "Avaliable",
   },
   // Room 3
@@ -40,8 +40,8 @@ const dummyRoomData = [
       "Nice View",
       "Digital TV with All Stations",
     ],
-    pricePerNight: 1500,
-    pricePerDay: 9000,
+    pricePerNight: 10,
+    pricePerDay: 20,
     roomStatus: "Avaliable",
   },
   // Room 4
@@ -56,8 +56,8 @@ const dummyRoomData = [
       "Nice View",
       "Digital TV with All Stations",
     ],
-    pricePerNight: 800,
-    pricePerDay: 4800,
+    pricePerNight: 20,
+    pricePerDay: 20,
     roomStatus: "Avaliable",
   },
   // Room 5
@@ -74,8 +74,8 @@ const dummyRoomData = [
       "Digital TV with All Stations",
     ],
     roomStatus: "Avaliable",
-    pricePerNight: 1600,
-    pricePerDay: 9600,
+    pricePerNight: 20,
+    pricePerDay: 20,
     roomStatus: "Avaliable",
   },
   // Room 6
@@ -90,8 +90,8 @@ const dummyRoomData = [
       "Nice View",
       "Digital TV with All Stations",
     ],
-    pricePerNight: 1000,
-    pricePerDay: 6000,
+    pricePerNight: 20,
+    pricePerDay: 10,
     roomStatus: "Avaliable",
   },
 ];
